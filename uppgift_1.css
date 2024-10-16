@@ -1,0 +1,90 @@
+html {
+    background-color: lightslategrey;  
+	font-family:Sans-Serif;
+}
+/*--------------- Design h ------------------------*/
+h1 {
+	color:DarkOrchid;
+    text-align: center;
+	margin-bottom:5.5px;/* Skapar ett gap mellan h1 och div */
+}
+/*--------------- Design Body ------------------------*/
+body {
+    margin-left: 38%;
+	justify-content: space-around;
+	align-items: center;
+	height: 95vh;
+	max-width: 410px;
+    padding-bottom:0.1px; /*knep för div margin */
+	background-color: #f9f9f9;
+}
+
+/*--------------- Design Div ------------------------*/
+/* Design div for id=billy */
+#billy{
+	width:380px;
+	height: 40vh;
+	border:2px inset DarkOrchid;
+    border-radius: 6px; /* för rund border */
+    padding:6px;
+	margin:auto;
+	margin-top: 5px;
+	margin-bottom: 5px;/* Skapar ett gap mellan de två divarna */
+	background-color:white;
+    overflow: hidden;
+	color:Brown;
+	text-align:left;
+	
+}
+
+/* Design div for id=bob */
+#bob{
+	width:380px;
+	height: 40vh;
+	border:2px inset DarkOrchid;
+    border-radius: 6px; /* för rund border */
+    padding:6px;
+	margin:auto;
+	background-color:white;
+    overflow: hidden;
+	color:Green;
+	text-align:left;
+}
+
+
+/*--------------- Design P ------------------------*/
+/* Design för 1a P */
+p:first-of-type {
+    font-weight: normal;
+	font-size:small;
+}
+/* Design för 4e P */
+p:nth-of-type(4) {
+	font-weight: bold;
+	font-size:small;
+}
+/* Design för P, class=two */
+.two {
+	font-size:medium;
+
+}
+/* Design för P, class=three */
+.three{
+	font-size:xx-small;
+}
+/*--------------- Design a=link ------------------------*/
+a {
+    text-decoration: underline; /* Underline all links by default */
+}
+#bob p:nth-of-type(1) a {
+    text-decoration: line-through; /* link design with line thruough in #div--bob,p1*/
+}
+#bob p:nth-of-type(3) a {
+    text-decoration: line-through;/* link design with line thruough in #div--bob,p3*/
+}
+#bob p:nth-of-type(4) a {
+    text-decoration: line-through;/* link design with line thruough in #div--bob,p4*/
+}
+.underline {
+    text-decoration: underline;
+}
