@@ -4,7 +4,7 @@ html {
 }
 /*--------------- Design h ------------------------*/
 h1 {
-	color:DarkOrchid;
+	color:purple;
     text-align: center;
 	margin-bottom:5.5px;/* Skapar ett gap mellan h1 och div */
 }
@@ -16,7 +16,7 @@ body {
 	height: 95vh;
 	max-width: 410px;
     padding-bottom:0.1px; /*knep för div margin */
-	background-color: #f9f9f9;
+	background-color: azure;
 }
 
 /*--------------- Design Div ------------------------*/
@@ -24,16 +24,17 @@ body {
 #billy{
 	width:380px;
 	height: 40vh;
-	border:2px inset DarkOrchid;
-    border-radius: 6px; /* för rund border */
+	border:1px solid purple;
+    border-radius: 5px; /* för rund border */
     padding:6px;
 	margin:auto;
 	margin-top: 5px;
 	margin-bottom: 5px;/* Skapar ett gap mellan de två divarna */
-	background-color:white;
+	background-color:azure;
     overflow: hidden;
 	color:Brown;
 	text-align:left;
+	font-size:small;
 	
 }
 
@@ -41,50 +42,39 @@ body {
 #bob{
 	width:380px;
 	height: 40vh;
-	border:2px inset DarkOrchid;
-    border-radius: 6px; /* för rund border */
+	border:1px solid purple;
+    border-radius: 5px; /* för rund border */
     padding:6px;
 	margin:auto;
-	background-color:white;
+	background-color:azure;
     overflow: hidden;
 	color:Green;
 	text-align:left;
+	font-size:small;
 }
 
 
 /*--------------- Design P ------------------------*/
-/* Design för 1a P */
-p:first-of-type {
-    font-weight: normal;
-	font-size:small;
-}
-/* Design för 4e P */
-p:nth-of-type(4) {
-	font-weight: bold;
-	font-size:small;
-}
-/* Design för P, class=two */
 .two {
-	font-size:medium;
+    font-size: medium; /* Större text i 2:a stycket för både div */
+}
 
+.two + .three {
+    font-size: xx-small; /* Mindre text i 3:e stycket för både div med hjälp av syskonväljare */
 }
-/* Design för P, class=three */
-.three{
-	font-size:xx-small;
+.two + .three + p {
+    font-weight: bold; /*texten i sista stycket i båda divarna blir bolder  */
 }
+/* Design för 1a P */
+#bob > .two + .three + p {
+    margin: 1px;
+    text-align: justify; /* Justifies the text */
+}
+
 /*--------------- Design a=link ------------------------*/
-a {
-    text-decoration: underline; /* Underline all links by default */
+#bob a {
+    text-decoration: line-through; /* line-through för andra divs länkerna */
 }
-#bob p:nth-of-type(1) a {
-    text-decoration: line-through; /* link design with line thruough in #div--bob,p1*/
-}
-#bob p:nth-of-type(3) a {
-    text-decoration: line-through;/* link design with line thruough in #div--bob,p3*/
-}
-#bob p:nth-of-type(4) a {
-    text-decoration: line-through;/* link design with line thruough in #div--bob,p4*/
-}
-.underline {
-    text-decoration: underline;
+#bob > .two a {
+    text-decoration: underline overline; /* underline för andra stycken i andra vivs länkerna */
 }
